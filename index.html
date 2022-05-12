@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>voteHelper</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>voteHelper</h1>
+    </header>
+    <main>
+        <h2>メンバー</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>番号</th>
+                    <th>名前</th>
+                    <th>オッズ</th>
+                </tr>
+            </thead>
+            <tbody id="menberTable"></tbody>
+        </table>
+
+        <h2>投票</h2>
+        <select id="voteNumberSelector">
+            <option value="null" selected>未選択</option>
+        </select>
+        <input type="number" value="1" min="1" id="votePointForm">
+        <button id="voteButton">決定</button>
+
+        <h2>投票履歴</h2>
+        <ul id="voteHistory"></ul>
+    </main>
+    <footer>
+        <p><small>&copy;2022 淵野アタリ</small></p>
+    </footer>
+</body>
+</html>
