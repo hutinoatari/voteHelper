@@ -39,7 +39,7 @@ const calculateOdds = (data) => {
 const vote = () => {
     const menber = +voteNumberSelector.value;
     const point = +votePointForm.value;
-    if(!Number.isInteger(menber) || !Number.isInteger(point)) {
+    if(!Number.isInteger(menber) || !Number.isInteger(point) || point<=0) {
         alert("不正な入力です。");
         return;
     }
